@@ -11,7 +11,13 @@ function Recipe() {
     {error && <div>{error}</div>}
     {isPending && <div>loading...</div>}
     {recipe && <div>
-      <h4>{recipe.title}</h4></div>}
+      <h4 className='page-title'>{recipe.title}</h4>
+      <p>Takes {recipe.cookingTime} to cook.</p>
+      <ul>
+        {recipe.ingredients.map(ing => <li>{ing}</li>)}
+      </ul>
+      <p>{recipe.method}</p>
+      </div>}
     </> 
   )
 }
