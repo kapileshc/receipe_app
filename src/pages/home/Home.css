@@ -1,0 +1,16 @@
+.home{
+    
+    display: flex;
+    
+    
+}
+
+.recipe_title{
+    border-bottom: 1px solid #333;
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
